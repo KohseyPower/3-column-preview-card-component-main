@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+:root {
+    /* Primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    /* pararaph */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 15% 0 15%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    
+}
+
+.column {
+    border: solid 1px black;
+    padding: 2rem 2rem 2rem 2rem;
+    height: 30rem;
+    display: grid;
+    grid-template-rows: 15% 15% 30% 20% 20% ;
+}
+
+
+/* divs' background-colors */
+
+#Sedans {
+    background-color: var(--Bright-orange);
+}
+
+#SUVs {
+    background-color: var(--Dark-cyan);
+}
+
+.Luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+img {
+    width: 25%;
+    height: auto;
+    
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', serif;
+    text-transform: uppercase;
+    
+}
+
+
+
+button {
+    background-color: yellow;
+}
+
+/* faire fenetre pour <875px */
