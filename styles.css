@@ -95,3 +95,20 @@ p {
 
 
 /* faire fenetre pour <875px */
+
+@media (max-width: 750px) {
+    main {
+        flex-direction: column;
+        width: 20rem;
+        height: 130%;
+        margin: 10% 0 10% 0;
+    }
+    #Sedans {
+        background-color: var(--Bright-orange);
+        border-radius: 15px 15px 0 0;
+    }
+    #Luxury {
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0 0 15px 15px;
+    }
+}
