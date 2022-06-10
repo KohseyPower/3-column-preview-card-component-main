@@ -40,16 +40,16 @@ main {
 
 /* divs' background-colors */
 
-#Sedans {
+.Sedans {
     background-color: var(--Bright-orange);
     border-radius: 15px 0 0 15px;
 }
 
-#SUVs {
+.SUVs {
     background-color: var(--Dark-cyan);
 }
 
-#Luxury {
+.Luxury {
     background-color: var(--Very-dark-cyan);
     border-radius: 0 15px 15px 0;
 }
@@ -81,16 +81,26 @@ p {
 
 /* text color for each <a> */
 
-#Sedans a {
+.Sedans a {
     color: var(--Bright-orange);
 }
 
-#SUVs a {
+.SUVs a {
     color: var(--Dark-cyan);
 }
 
-#Luxury a {
+.Luxury a {
     color: var(--Very-dark-cyan);
+}
+
+a {
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+a:hover {
+    border: solid var(--Very-light-gray) 2px;
+    color: var(--Very-light-gray);
+    background-color: transparent;
 }
 
 
@@ -100,14 +110,13 @@ p {
     main {
         flex-direction: column;
         width: 20rem;
-        height: 130%;
-        margin: 10% 0 10% 0;
+        margin: 3rem 0 3rem 0;
     }
-    #Sedans {
+    .Sedans {
         background-color: var(--Bright-orange);
         border-radius: 15px 15px 0 0;
     }
-    #Luxury {
+    .Luxury {
         background-color: var(--Very-dark-cyan);
         border-radius: 0 0 15px 15px;
     }
